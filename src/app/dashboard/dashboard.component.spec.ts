@@ -5,13 +5,13 @@ import { provideMockStore } from '@ngrx/store/testing';
 describe('DashboardComponent', () => {
   let component: DashboardComponent;
   let fixture: ComponentFixture<DashboardComponent>;
- 
+
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       providers: [provideMockStore({})],
-      declarations: [ DashboardComponent ]
+      declarations: [DashboardComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
@@ -23,8 +23,4 @@ describe('DashboardComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-  // it('should render paragraph', () => {
-  //   const compiled = fixture.nativeElement;
-  //   expect(compiled.querySelector('p').textContent).toContain('dashboard works!');
-  // });
 });

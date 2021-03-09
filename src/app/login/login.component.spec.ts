@@ -1,8 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ReactiveFormsModule } from '@angular/forms';
-import { MockStore,provideMockStore } from '@ngrx/store/testing';
+import { MockStore, provideMockStore } from '@ngrx/store/testing';
 import { LoginState } from '../store/login.state';
-
 import { LoginComponent } from './login.component';
 
 describe('LoginComponent', () => {
@@ -33,23 +32,20 @@ describe('LoginComponent', () => {
     component.ngOnInit();
     fixture.detectChanges();
   });
-
-  // it('should create', () => {
-  //   expect(component).toBeTruthy();
+  
+  // it('submitting a form ', () => {
+  //   expect(component.loginForm.valid).toBeFalsy();
+  //   component.loginForm.controls.email.setValue('test@test.com');
+  //   component.loginForm.controls.password.setValue('123456');
+  //   component.onLoginSubmit();
+  //   expect(component.loginForm.valid).toBeTruthy();
   // });
-
-  // it('should create', () => {
-  //   expect(component).toBeTruthy();
+  // it('submitting a form with invalid form', () => {
+  //   expect(component.loginForm.valid).toBeFalsy();
+  //   component.loginForm.controls.email.setValue('test@test');
+  //   component.loginForm.controls.password.setValue('12345');
+  //   component.onLoginSubmit();
+  //   expect(component.loginForm.valid).toBeFalsy();
   // });
-  it('form invalid when empty', () => {
-    expect(component.loginForm.valid).toBeFalsy();
-  });
-  it('email field validity', () => {
-    const email = component.loginForm.controls.email;
-    expect(email.valid).toBeFalsy();
-  });
- 
-
 });
 
-    

@@ -3,9 +3,7 @@ import { initialState } from '../login.state';
 import * as selectors from './login.selectors';
 
 describe('Login Selectors', () => {
-  // it('should select the feature state', () => {
 
-    // });
     it('#isAuthenticated with false', () => {
         expect(selectors.isAuthenticated.projector(initialState)).toBeFalsy;
     });
