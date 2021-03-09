@@ -5,13 +5,13 @@ import * as selectors from './login.selectors';
 describe('Login Selectors', () => {
 
     it('#isAuthenticated with false', () => {
-        expect(selectors.isAuthenticated.projector(initialState)).toBeFalsy;
+        expect(selectors.isAuthenticated.projector(initialState)).toBe(false);
     });
     it('#isAuthenticated with true', () => {
         expect(selectors.isAuthenticated.projector({
             user: new User('test@test.com', '2312313', 'ewrwrwefwefwe'),
             errorMessage: ''
-        })).toBeFalsy;
+        })).toBe(true);
     });
     it('#getErrorMessage with Invalid Email', () => {
         expect(selectors.getErrorMessage.projector({

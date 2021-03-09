@@ -10,10 +10,10 @@ import { getUser } from '../store/selectors/login.selectors';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  email: Observable<User | null | undefined> | undefined  ;
+ // email: Observable<User | null | undefined> | undefined  ;
   constructor(private store: Store<LoginState>) { }
 
   ngOnInit(): void {
-    this.email = this.store.select(getUser);
+   // this.email = this.store.select(getUser);
   }
 }
