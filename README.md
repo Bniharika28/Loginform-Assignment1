@@ -25,3 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## What to improve
+
+The application takeUserName as 'test@test.com' and password as '123456' and on click of login button, it takes you to the dashboard page and fron dashboard page user can logout which will redirect to login page.
